@@ -119,6 +119,38 @@ button:focus-visible {
   width: auto;
 }
 
+.nav-badge-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+/* --- Coming Soon Shared --- */
+.coming-soon-muted {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.coming-soon-label {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  text-align: center;
+  display: block;
+}
+
+.btn-coming-soon {
+  display: inline-block;
+  padding: 14px 40px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-accent-primary);
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  cursor: default;
+}
+
 /* --- Hero --- */
 .hero {
   min-height: 100vh;
@@ -167,26 +199,6 @@ button:focus-visible {
   color: var(--color-text-secondary);
 }
 
-.badge-link {
-  display: inline-block;
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.badge-link img {
-  height: 54px;
-  width: auto;
-}
-
-.badge-link:hover {
-  opacity: 0.85;
-  transform: translateY(-1px);
-}
-
-.badge-link:active {
-  opacity: 0.75;
-  transform: translateY(0);
-}
-
 .hero-pricing-note {
   margin-top: 16px;
   font-size: 0.875rem;
@@ -209,11 +221,6 @@ button:focus-visible {
   border-radius: var(--radius-card);
   padding: 32px 24px;
   box-shadow: var(--shadow-card);
-}
-
-.problem-card .card-icon {
-  font-size: 2rem;
-  margin-bottom: 16px;
 }
 
 .problem-card h3 {
@@ -308,8 +315,10 @@ button:focus-visible {
 }
 
 .feature-card .card-icon {
-  font-size: 1.5rem;
+  width: 28px;
+  height: 28px;
   margin-bottom: 12px;
+  filter: invert(35%) sepia(85%) saturate(600%) hue-rotate(320deg) brightness(105%);
 }
 
 .feature-card h3 {
@@ -358,27 +367,45 @@ button:focus-visible {
   padding: 96px 0;
 }
 
+.pricing-tiers {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
 .pricing-card {
-  max-width: 420px;
-  margin: 0 auto;
+  flex: 1;
+  max-width: 320px;
   background: var(--color-bg-elevated);
-  border: 1px solid var(--color-accent-primary);
+  border: 1px solid var(--color-bg-secondary);
   border-radius: var(--radius-card);
   padding: 40px 32px;
   text-align: center;
   box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.pricing-card--highlighted {
+  border-color: var(--color-accent-primary);
+  box-shadow: var(--shadow-card), var(--shadow-accent);
+}
+
+.pricing-save-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--gradient-primary);
+  color: var(--color-text-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
 }
 
 .pricing-card .pricing-name {
   font-size: 1.375rem;
   font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.pricing-card .pricing-desc {
-  font-size: 0.9375rem;
-  color: var(--color-text-secondary);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .pricing-card .pricing-amount {
@@ -390,13 +417,23 @@ button:focus-visible {
 .pricing-card .pricing-period {
   font-size: 0.9375rem;
   color: var(--color-text-tertiary);
-  margin-bottom: 32px;
+  margin-bottom: 8px;
+}
+
+.pricing-card .pricing-billing {
+  font-size: 0.8125rem;
+  color: var(--color-text-tertiary);
 }
 
 .pricing-checklist {
   list-style: none;
   text-align: left;
   margin-bottom: 32px;
+}
+
+.pricing-checklist--shared {
+  max-width: 360px;
+  margin: 0 auto 40px;
 }
 
 .pricing-checklist li {
@@ -413,6 +450,10 @@ button:focus-visible {
   color: var(--color-accent-primary);
   font-weight: 700;
   flex-shrink: 0;
+}
+
+.pricing-cta {
+  text-align: center;
 }
 
 .pricing-note {
@@ -477,12 +518,17 @@ button:focus-visible {
 .footer-download {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: flex-start;
+  gap: 4px;
 }
 
 .footer-download img {
   height: 40px;
   width: auto;
+}
+
+.footer-download .coming-soon-label {
+  margin-bottom: 8px;
 }
 
 .footer-download .platform-note {
@@ -614,7 +660,14 @@ button:focus-visible {
     padding: 64px 0;
   }
 
+  .pricing-tiers {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .pricing-card {
+    max-width: 100%;
+    width: 100%;
     padding: 32px 24px;
   }
 
