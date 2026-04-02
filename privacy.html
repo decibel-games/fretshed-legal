@@ -14,142 +14,124 @@
   <meta property="og:title" content="Privacy Policy – FretShed">
   <meta property="og:description" content="FretShed Privacy Policy. We collect only what's necessary to operate the app. No accounts required. No personal data sold.">
   <meta property="og:image" content="https://fretshed.dcbl.app/assets/icon.png">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #FFFFFF;
-      background: #0F0F10;
-      padding: 0 24px 80px;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      padding: 20px 0;
-      border-bottom: 1px solid #2C2C2E;
-      margin-bottom: 48px;
-    }
-    nav .brand {
-      font-size: 20px;
-      font-weight: 700;
-      color: #FC3C44;
-      text-decoration: none;
-      margin-right: auto;
-    }
-    nav a {
-      color: #98989D;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-    }
-    nav a:hover, nav a.active {
-      color: #FFFFFF;
-    }
-    header { margin-bottom: 48px; }
-    header h1 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #FC3C44;
-      margin-bottom: 6px;
-    }
-    header p { color: #98989D; font-size: 14px; }
-    h2 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #FC3C44;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      padding-bottom: 6px;
-      border-bottom: 1px solid #2C2C2E;
-    }
-    p { margin-bottom: 14px; }
-    ul { margin: 10px 0 14px 20px; }
-    ul li { margin-bottom: 6px; color: #FFFFFF; }
-    a { color: #FC3C44; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer {
-      margin-top: 64px;
-      padding-top: 24px;
-      border-top: 1px solid #2C2C2E;
-      font-size: 13px;
-      color: #6E6E73;
-    }
-    footer .tagline {
-      color: #98989D;
-      font-style: italic;
-      margin-bottom: 8px;
-    }
-  </style>
+
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-  <nav>
-    <a href="support.html" class="brand">FretShed</a>
-    <a href="support.html">Support</a>
-    <a href="privacy.html" class="active">Privacy</a>
-    <a href="terms.html">Terms</a>
+  <!-- Nav -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="./" class="nav-brand">
+        <img src="assets/icon.png" alt="FretShed app icon" width="32" height="32">
+        <span>FretShed</span>
+      </a>
+      <div class="nav-badge-wrap">
+        <a href="https://apps.apple.com/us/app/fretshed/id6759403787" class="nav-badge coming-soon-muted" aria-label="Download FretShed on the App Store" rel="noopener noreferrer" target="_blank">
+          <img src="assets/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="" width="120" height="40">
+        </a>
+        <span class="coming-soon-label">Coming Soon</span>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <h1>Privacy Policy</h1>
-    <p>FretShed &nbsp;·&nbsp; Last updated: March 1, 2026</p>
-  </header>
+  <main>
 
-  <p>FretShed ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your choices when you use the FretShed app on iOS and macOS.</p>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>FretShed &nbsp;·&nbsp; Last updated: March 1, 2026</p>
+      </div>
+    </section>
 
-  <h2>1. Information We Collect</h2>
-  <p>We collect only what is necessary to operate the app and improve the experience.</p>
-  <ul>
-    <li><strong>Subscription & purchase information.</strong> When you subscribe to FretShed Pro, Apple processes your payment. We use RevenueCat to manage subscription status. RevenueCat receives a randomised device identifier and your subscription entitlement. It does not receive your name, email, or payment details.</li>
-    <li><strong>Usage analytics.</strong> We use Mixpanel to collect anonymous usage events (e.g. which features are used, how often solos are generated). This data is aggregated and is not linked to your identity.</li>
-    <li><strong>Device information.</strong> Analytics tools may collect standard device information such as device model, operating system version, and app version. This is used solely to understand how the app performs across different devices.</li>
-  </ul>
-  <p>FretShed does not require you to create an account. We do not collect your name, email address, or any personally identifiable information directly.</p>
+    <!-- Content -->
+    <div class="legal-content">
 
-  <h2>2. How We Use Your Information</h2>
-  <ul>
-    <li>To verify and manage your FretShed Pro subscription</li>
-    <li>To understand how the app is used and improve its features</li>
-    <li>To diagnose crashes and technical issues</li>
-  </ul>
-  <p>We do not sell your information to third parties. We do not use your information for advertising purposes.</p>
+      <p>FretShed ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your choices when you use the FretShed app on iOS and macOS.</p>
 
-  <h2>3. Generated Content</h2>
-  <p>When you generate a solo, a request containing your chosen parameters (genre, key, tempo, speed) is sent to our backend server for processing. No personally identifiable information is included in this request. Generated audio is returned to your device and stored locally. We do not retain your generated audio on our servers.</p>
+      <h2>1. Information We Collect</h2>
+      <p>We collect only what is necessary to operate the app and improve the experience.</p>
+      <ul>
+        <li><strong>Subscription & purchase information.</strong> When you subscribe to FretShed Pro, Apple processes your payment. We use RevenueCat to manage subscription status. RevenueCat receives a randomised device identifier and your subscription entitlement. It does not receive your name, email, or payment details.</li>
+        <li><strong>Usage analytics.</strong> We use Mixpanel to collect anonymous usage events (e.g. which features are used, how often solos are generated). This data is aggregated and is not linked to your identity.</li>
+        <li><strong>Device information.</strong> Analytics tools may collect standard device information such as device model, operating system version, and app version. This is used solely to understand how the app performs across different devices.</li>
+      </ul>
+      <p>FretShed does not require you to create an account. We do not collect your name, email address, or any personally identifiable information directly.</p>
 
-  <h2>4. Third-Party Services</h2>
-  <p>FretShed uses the following third-party services, each with their own privacy policies:</p>
-  <ul>
-    <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a> – subscription management</li>
-    <li><a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Mixpanel</a> – anonymous usage analytics</li>
-    <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple</a> – payment processing and App Store</li>
-  </ul>
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>To verify and manage your FretShed Pro subscription</li>
+        <li>To understand how the app is used and improve its features</li>
+        <li>To diagnose crashes and technical issues</li>
+      </ul>
+      <p>We do not sell your information to third parties. We do not use your information for advertising purposes.</p>
 
-  <h2>5. Data Retention</h2>
-  <p>Generated solos are stored locally on your device. You can delete them at any time within the app. Analytics data is retained by Mixpanel in accordance with their data retention policy. Subscription data is retained by RevenueCat for as long as your subscription is active and for a reasonable period thereafter.</p>
+      <h2>3. Generated Content</h2>
+      <p>When you generate a solo, a request containing your chosen parameters (genre, key, tempo, speed) is sent to our backend server for processing. No personally identifiable information is included in this request. Generated audio is returned to your device and stored locally. We do not retain your generated audio on our servers.</p>
 
-  <h2>6. Children's Privacy</h2>
-  <p>FretShed is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take steps to delete it.</p>
+      <h2>4. Third-Party Services</h2>
+      <p>FretShed uses the following third-party services, each with their own privacy policies:</p>
+      <ul>
+        <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a> – subscription management</li>
+        <li><a href="https://mixpanel.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Mixpanel</a> – anonymous usage analytics</li>
+        <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple</a> – payment processing and App Store</li>
+      </ul>
 
-  <h2>7. Your Rights</h2>
-  <p>Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or delete information held about you. Since FretShed does not collect personal data directly, most requests should be directed to the relevant third-party services listed above. For any privacy-related concerns, you can contact us at the address below.</p>
+      <h2>5. Data Retention</h2>
+      <p>Generated solos are stored locally on your device. You can delete them at any time within the app. Analytics data is retained by Mixpanel in accordance with their data retention policy. Subscription data is retained by RevenueCat for as long as your subscription is active and for a reasonable period thereafter.</p>
 
-  <h2>8. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+      <h2>6. Children's Privacy</h2>
+      <p>FretShed is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take steps to delete it.</p>
 
-  <h2>9. Contact</h2>
-  <p>If you have questions or concerns about this Privacy Policy, please contact us at:<br />
-  <a href="mailto:info@decibel.games">info@decibel.games</a></p>
+      <h2>7. Your Rights</h2>
+      <p>Depending on your location, you may have rights regarding your personal data, including the right to access, correct, or delete information held about you. Since FretShed does not collect personal data directly, most requests should be directed to the relevant third-party services listed above. For any privacy-related concerns, you can contact us at the address below.</p>
 
-  <footer>
-    <p class="tagline">The shed for serious players. No tabs. Trust your ear.</p>
-    <p>&copy; 2026 Decibel Technologies. All rights reserved.</p>
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+      <h2>9. Contact</h2>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us at:<br />
+      <a href="mailto:info@decibel.games">info@decibel.games</a></p>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/icon.png" alt="FretShed app icon" width="40" height="40">
+            <span>FretShed</span>
+          </div>
+          <p class="footer-tagline">The shed for serious players.</p>
+        </div>
+        <div>
+          <ul class="footer-links">
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="mailto:info@decibel.games">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-download">
+          <a href="https://apps.apple.com/us/app/fretshed/id6759403787" class="coming-soon-muted" aria-label="Download FretShed on the App Store" rel="noopener noreferrer" target="_blank">
+            <img src="assets/Download_on_App_Store/White_lockup/SVG/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="" width="120" height="40">
+          </a>
+          <span class="coming-soon-label">Coming Soon</span>
+          <p class="platform-note">iPhone and iPad · Mac coming soon</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Decibel Technologies. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
+  <script src="assets/app.js"></script>
 </body>
 </html>
